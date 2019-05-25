@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ForexInvoicebillingKit.jnlp">
+  <information>
+    <title>ForexInvoicebillingKit</title>
+    <vendor>HP</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\CMIIrisJavaWrapper.jar" size="29889" download="eager" />
+    <jar href="lib\FaceCapture.jar" size="63116" download="eager" />
+    <jar href="lib\ReportScriptlet.jar" size="9254" download="eager" />
+    <jar href="lib\activation-1.1.jar" size="62983" download="eager" />
+    <jar href="lib\bcmail-jdk14-1.38.jar" size="192035" download="eager" />
+    <jar href="lib\bcmail-jdk14-138.jar" size="192035" download="eager" />
+    <jar href="lib\bcprov-jdk14-1.38.jar" size="1551468" download="eager" />
+    <jar href="lib\bcprov-jdk14-138.jar" size="1551468" download="eager" />
+    <jar href="lib\bctsp-jdk14-1.38.jar" size="22994" download="eager" />
+    <jar href="lib\bridj-0.6.2.jar" size="878674" download="eager" />
+    <jar href="lib\castor-1.2.jar" size="864598" download="eager" />
+    <jar href="lib\commons-beanutils-1.8.0.jar" size="231320" download="eager" />
+    <jar href="lib\commons-beanutils-1.8.2.jar" size="231891" download="eager" />
+    <jar href="lib\commons-collections-3.2.1.jar" size="575389" download="eager" />
+    <jar href="lib\commons-digester-2.1.jar" size="196768" download="eager" />
+    <jar href="lib\commons-javaflow-20060411.jar" size="96529" download="eager" />
+    <jar href="lib\commons-logging-1.1.1.jar" size="60841" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\eclipselink.jar" size="8478776" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\groovy-all-2.0.1.jar" size="6191960" download="eager" />
+    <jar href="lib\gson-2.2.2.jar" size="189285" download="eager" />
+    <jar href="lib\iface-connector-main-3.4.0.0.jar" size="58817" download="eager" />
+    <jar href="lib\imgscalr-lib-4.2.jar" size="226824" download="eager" />
+    <jar href="lib\itext-2.1.7.js2.jar" size="1130575" download="eager" />
+    <jar href="lib\itextpdf-5.1.0.jar" size="1614453" download="eager" />
+    <jar href="lib\itextpdf.jar" size="1765457" download="eager" />
+    <jar href="lib\jackson-annotations-2.1.4.jar" size="34476" download="eager" />
+    <jar href="lib\jackson-annotations-2.8.0.jar" size="55784" download="eager" />
+    <jar href="lib\jackson-annotations-2.9.6.jar" size="66981" download="eager" />
+    <jar href="lib\jackson-core-2.1.4.jar" size="206866" download="eager" />
+    <jar href="lib\jackson-core-2.8.9.jar" size="282633" download="eager" />
+    <jar href="lib\jackson-core-2.9.7.jar" size="324036" download="eager" />
+    <jar href="lib\jackson-databind-2.1.4.jar" size="926562" download="eager" />
+    <jar href="lib\jackson-databind-2.8.9.jar" size="1242477" download="eager" />
+    <jar href="lib\jackson-databind-2.9.7.jar" size="1350857" download="eager" />
+    <jar href="lib\jakarta-regexp-1.4.jar" size="28576" download="eager" />
+    <jar href="lib\jasperreports-5.6.0.jar" size="4938322" download="eager" />
+    <jar href="lib\jasperreports-fonts-5.5.1.jar" size="2478083" download="eager" />
+    <jar href="lib\jasperreports-javaflow-6.7.0.jar" size="5537261" download="eager" />
+    <jar href="lib\javacv.jar" size="401878" download="eager" />
+    <jar href="lib\javax.mail-1.5.5.jar" size="603571" download="eager" />
+    <jar href="lib\javax.persistence_2.1.0.v201304241213.jar" size="164637" download="eager" />
+    <jar href="lib\javax.servlet-api-3.0.1.jar" size="85353" download="eager" />
+    <jar href="lib\jcommon-1.0.15.jar" size="309294" download="eager" />
+    <jar href="lib\jdtcore-3.1.0.jar" size="3555707" download="eager" />
+    <jar href="lib\jfoenix-8.0.7.jar" size="2631271" download="eager" />
+    <jar href="lib\jfoenix-9.0.8.jar" size="2419463" download="eager" />
+    <jar href="lib\jfreechart-1.0.12.jar" size="1368681" download="eager" />
+    <jar href="lib\jna-4.2.0.jar" size="1092828" download="eager" />
+    <jar href="lib\jna-platform-4.1.0.jar" size="1464423" download="eager" />
+    <jar href="lib\json-simple-1.1.jar" size="16046" download="eager" />
+    <jar href="lib\junit-4.11.jar" size="245039" download="eager" />
+    <jar href="lib\logback-classic-1.0.7.jar" size="251679" download="eager" />
+    <jar href="lib\logback-core-1.0.7.jar" size="364399" download="eager" />
+    <jar href="lib\lucene-analyzers-common-4.5.1.jar" size="1586103" download="eager" />
+    <jar href="lib\lucene-core-4.5.1.jar" size="2297477" download="eager" />
+    <jar href="lib\lucene-queries-4.5.1.jar" size="205195" download="eager" />
+    <jar href="lib\lucene-queryparser-4.5.1.jar" size="384884" download="eager" />
+    <jar href="lib\lucene-sandbox-4.5.1.jar" size="45578" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+    <jar href="lib\olap4j-0.9.7.309-JS-3.jar" size="445343" download="eager" />
+    <jar href="lib\opencv-343.jar" size="464823" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql_2.5.2.v20140319-9ad6abd.jar" size="1366247" download="eager" />
+    <jar href="lib\poi-3.7.jar" size="1675036" download="eager" />
+    <jar href="lib\sdk-commons-main-1.1.8.jar" size="31690" download="eager" />
+    <jar href="lib\slf4j-api-1.6.6.jar" size="26176" download="eager" />
+    <jar href="lib\spring-aop-5.0.0.RELEASE-javadoc.jar" size="1276036" download="eager" />
+    <jar href="lib\spring-aop-5.0.0.RELEASE-sources.jar" size="358358" download="eager" />
+    <jar href="lib\spring-aop-5.0.0.RELEASE.jar" size="360614" download="eager" />
+    <jar href="lib\spring-aspects-5.0.0.RELEASE-javadoc.jar" size="74761" download="eager" />
+    <jar href="lib\spring-aspects-5.0.0.RELEASE-sources.jar" size="29859" download="eager" />
+    <jar href="lib\spring-aspects-5.0.0.RELEASE.jar" size="41128" download="eager" />
+    <jar href="lib\spring-beans-5.0.0.RELEASE-javadoc.jar" size="2038837" download="eager" />
+    <jar href="lib\spring-beans-5.0.0.RELEASE-sources.jar" size="624654" download="eager" />
+    <jar href="lib\spring-beans-5.0.0.RELEASE.jar" size="654710" download="eager" />
+    <jar href="lib\spring-context-5.0.0.RELEASE-javadoc.jar" size="3591929" download="eager" />
+    <jar href="lib\spring-context-5.0.0.RELEASE-sources.jar" size="1031141" download="eager" />
+    <jar href="lib\spring-context-5.0.0.RELEASE.jar" size="1070994" download="eager" />
+    <jar href="lib\spring-context-indexer-5.0.0.RELEASE-javadoc.jar" size="24525" download="eager" />
+    <jar href="lib\spring-context-indexer-5.0.0.RELEASE-sources.jar" size="13710" download="eager" />
+    <jar href="lib\spring-context-indexer-5.0.0.RELEASE.jar" size="17026" download="eager" />
+    <jar href="lib\spring-context-support-5.0.0.RELEASE-javadoc.jar" size="540597" download="eager" />
+    <jar href="lib\spring-context-support-5.0.0.RELEASE-sources.jar" size="167583" download="eager" />
+    <jar href="lib\spring-context-support-5.0.0.RELEASE.jar" size="171926" download="eager" />
+    <jar href="lib\spring-core-5.0.0.RELEASE-javadoc.jar" size="2271400" download="eager" />
+    <jar href="lib\spring-core-5.0.0.RELEASE-sources.jar" size="793066" download="eager" />
+    <jar href="lib\spring-core-5.0.0.RELEASE.jar" size="1207463" download="eager" />
+    <jar href="lib\spring-expression-5.0.0.RELEASE-javadoc.jar" size="771238" download="eager" />
+    <jar href="lib\spring-expression-5.0.0.RELEASE-sources.jar" size="208048" download="eager" />
+    <jar href="lib\spring-expression-5.0.0.RELEASE.jar" size="262695" download="eager" />
+    <jar href="lib\spring-instrument-5.0.0.RELEASE-javadoc.jar" size="23833" download="eager" />
+    <jar href="lib\spring-instrument-5.0.0.RELEASE-sources.jar" size="1987" download="eager" />
+    <jar href="lib\spring-instrument-5.0.0.RELEASE.jar" size="1399" download="eager" />
+    <jar href="lib\spring-jcl-5.0.0.RELEASE-javadoc.jar" size="54304" download="eager" />
+    <jar href="lib\spring-jcl-5.0.0.RELEASE-sources.jar" size="9865" download="eager" />
+    <jar href="lib\spring-jcl-5.0.0.RELEASE.jar" size="15666" download="eager" />
+    <jar href="lib\spring-jdbc-5.0.0.RELEASE-javadoc.jar" size="1496286" download="eager" />
+    <jar href="lib\spring-jdbc-5.0.0.RELEASE-sources.jar" size="413543" download="eager" />
+    <jar href="lib\spring-jdbc-5.0.0.RELEASE.jar" size="390640" download="eager" />
+    <jar href="lib\spring-jms-5.0.0.RELEASE-javadoc.jar" size="803181" download="eager" />
+    <jar href="lib\spring-jms-5.0.0.RELEASE-sources.jar" size="238210" download="eager" />
+    <jar href="lib\spring-jms-5.0.0.RELEASE.jar" size="253225" download="eager" />
+    <jar href="lib\spring-messaging-5.0.0.RELEASE-javadoc.jar" size="1168065" download="eager" />
+    <jar href="lib\spring-messaging-5.0.0.RELEASE-sources.jar" size="288076" download="eager" />
+    <jar href="lib\spring-messaging-5.0.0.RELEASE.jar" size="367674" download="eager" />
+    <jar href="lib\spring-orm-5.0.0.RELEASE-javadoc.jar" size="475367" download="eager" />
+    <jar href="lib\spring-orm-5.0.0.RELEASE-sources.jar" size="168943" download="eager" />
+    <jar href="lib\spring-orm-5.0.0.RELEASE.jar" size="184546" download="eager" />
+    <jar href="lib\spring-oxm-5.0.0.RELEASE-javadoc.jar" size="224748" download="eager" />
+    <jar href="lib\spring-oxm-5.0.0.RELEASE-sources.jar" size="58620" download="eager" />
+    <jar href="lib\spring-oxm-5.0.0.RELEASE.jar" size="66684" download="eager" />
+    <jar href="lib\spring-test-5.0.0.RELEASE-javadoc.jar" size="1798402" download="eager" />
+    <jar href="lib\spring-test-5.0.0.RELEASE-sources.jar" size="502465" download="eager" />
+    <jar href="lib\spring-test-5.0.0.RELEASE.jar" size="585057" download="eager" />
+    <jar href="lib\spring-tx-5.0.0.RELEASE-javadoc.jar" size="1151249" download="eager" />
+    <jar href="lib\spring-tx-5.0.0.RELEASE-sources.jar" size="292448" download="eager" />
+    <jar href="lib\spring-tx-5.0.0.RELEASE.jar" size="248889" download="eager" />
+    <jar href="lib\spring-web-4.3.10.RELEASE.jar" size="822491" download="eager" />
+    <jar href="lib\spring-web-5.0.0.RELEASE-javadoc.jar" size="3671794" download="eager" />
+    <jar href="lib\spring-web-5.0.0.RELEASE-sources.jar" size="1027675" download="eager" />
+    <jar href="lib\spring-web-5.0.0.RELEASE.jar" size="1215666" download="eager" />
+    <jar href="lib\spring-webflux-5.0.0.RELEASE-javadoc.jar" size="1539689" download="eager" />
+    <jar href="lib\spring-webflux-5.0.0.RELEASE-sources.jar" size="417008" download="eager" />
+    <jar href="lib\spring-webflux-5.0.0.RELEASE.jar" size="644558" download="eager" />
+    <jar href="lib\spring-webmvc-5.0.0.RELEASE-javadoc.jar" size="2348241" download="eager" />
+    <jar href="lib\spring-webmvc-5.0.0.RELEASE-sources.jar" size="710799" download="eager" />
+    <jar href="lib\spring-webmvc-5.0.0.RELEASE.jar" size="779982" download="eager" />
+    <jar href="lib\spring-websocket-5.0.0.RELEASE-javadoc.jar" size="1147718" download="eager" />
+    <jar href="lib\spring-websocket-5.0.0.RELEASE-sources.jar" size="301367" download="eager" />
+    <jar href="lib\spring-websocket-5.0.0.RELEASE.jar" size="413766" download="eager" />
+    <jar href="lib\webcam-capture-0.3.13-SNAPSHOT.jar" size="431226" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="sb_pmo_biometric.SB_PMO_Biometric"  name="ForexInvoicebillingKit" />
+  <update check="always"/>
+</jnlp>

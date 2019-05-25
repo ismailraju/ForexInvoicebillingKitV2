@@ -1,0 +1,149 @@
+ -20500 Info! Wait until eye transfer cnt 0
+ -7546 Info! Wait until eye transfer cnt 0
+ -27120 Info! Wait until eye transfer cnt 0
+ -27188 Info! Wait until eye transfer cnt 0
+ -12330 Info! Wait until eye transfer cnt 0
+ -12486 Info! Wait until eye transfer cnt 0
+ -10219 Info! Wait until eye transfer cnt 0
+ -10915 Info! Wait until eye transfer cnt 0
+ -18890 Info! Wait until eye transfer cnt 0
+ -10671 Info! Wait until eye transfer cnt 0
+ -10969 Info! Wait until eye transfer cnt 0
+ -10743 Info! Wait until eye transfer cnt 0
+ -5138 Info! Wait until eye transfer cnt 0
+ -31383 Info! Wait until eye transfer cnt 0
+ -5894 Info! Wait until eye transfer cnt 0
+ -27090 Info! Wait until eye transfer cnt 0
+ -12747 Info! Wait until eye transfer cnt 0
+E-30891 Sun Jan 20 13:28:01 2019  LibV1.3.2 FirmV  One of devices arrived
+  info: PL 0 ST 0 ES 8 PS 0 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-35892 Sun Jan 20 13:28:06 2019  LibV1.3.2 FirmV  Error! Device Driver interface Error!
+  info: PL 0 ST 0 ES 8 PS 0 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-35892 Sun Jan 20 13:28:06 2019  LibV1.3.2 FirmV  Error! Device Driver interface Error!
+  info: PL 0 ST 0 ES 8 PS 0 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-143011 Sun Jan 20 13:30:29 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 16 FC 216 CF 31 CI 0 MK 1080 CR 216 ID 1 CD 1
+E-143012 Sun Jan 20 13:30:29 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 16 FC 216 CF 31 CI 0 MK 1080 CR 216 ID 1 CD 1
+E-143020 Sun Jan 20 13:30:29 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  Error! ImagerThread exit. just USB disconnected!
+  info: PL 0 ST 0 ES 8 PS 1 CS 16 FC 216 CF 31 CI 0 MK 1080 CR 216 ID 1 CD 1
+E-143249 Sun Jan 20 13:30:29 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  USB disconnected!
+  info: PL 0 ST 0 ES 8 PS 1 CS 16 FC 216 CF 31 CI 0 MK 1080 CR 216 ID 1 CD 1
+ -148703 WatchdogThread imagerThread emit closeOpen()
+ -9691 Info! Wait until eye transfer cnt 0
+ -36764 Info! Wait until eye transfer cnt 0
+ -11705 Info! Wait until eye transfer cnt 0
+ -12338 Info! Wait until eye transfer cnt 0
+ -18377 Info! Wait until eye transfer cnt 0
+
+ -16140 Info! Wait until eye transfer cnt 0
+
+ -11914 Info! Wait until eye transfer cnt 0
+ -9947 Info! Wait until eye transfer cnt 0
+ -9950 Info! Wait until eye transfer cnt 0
+ -10948 Info! Wait until eye transfer cnt 0
+ -1951 Info! Wait until eye transfer cnt 0
+ -2951 Info! Wait until eye transfer cnt 0
+ -3949 Info! Wait until eye transfer cnt 0
+ -1946 Info! Wait until eye transfer cnt 0
+ -8953 Info! Wait until eye transfer cnt 0
+ -1950 Info! Wait until eye transfer cnt 0
+ -1943 Info! Wait until eye transfer cnt 0
+ -11954 Info! Wait until eye transfer cnt 0
+ -1950 Info! Wait until eye transfer cnt 0
+ -7953 Info! Wait until eye transfer cnt 0
+ -1946 Info! Wait until eye transfer cnt 0
+ -1951 Info! Wait until eye transfer cnt 0
+ -1951 Info! Wait until eye transfer cnt 0
+ -11952 Info! Wait until eye transfer cnt 0
+ -18959 Info! Wait until eye transfer cnt 0
+ -1945 Info! Wait until eye transfer cnt 0
+ -9953 Info! Wait until eye transfer cnt 0
+ -1951 Info! Wait until eye transfer cnt 0
+ -1945 Info! Wait until eye transfer cnt 0
+ -9951 Info! Wait until eye transfer cnt 0
+ -1950 Info! Wait until eye transfer cnt 0
+ -7948 Info! Wait until eye transfer cnt 0
+ -9952 Info! Wait until eye transfer cnt 0
+ -2948 Info! Wait until eye transfer cnt 0
+ -15953 Info! Wait until eye transfer cnt 0
+ -1950 Info! Wait until eye transfer cnt 0
+E-16160 Tue Feb 19 11:02:42 2019  LibV1.3.2 FirmV  One of devices arrived
+  info: PL 0 ST 0 ES 8 PS 1651067951 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+ -7947 Info! Wait until eye transfer cnt 0
+ -10951 Info! Wait until eye transfer cnt 0
+ -10950 Info! Wait until eye transfer cnt 0
+ -11939 Info! Wait until eye transfer cnt 0
+ -1946 Info! Wait until eye transfer cnt 0
+ -26954 Info! Wait until eye transfer cnt 0
+ -20954 Info! Wait until eye transfer cnt 0
+ -3945 Info! Wait until eye transfer cnt 0
+ -10949 Info! Wait until eye transfer cnt 0
+E-18853 Mon Feb 25 18:31:30 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-22284 Mon Feb 25 18:31:33 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices arrived
+  info: PL 0 ST 0 ES 8 PS 1 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-139809 Mon Feb 25 18:37:12 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-139816 Mon Feb 25 18:37:12 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-139822 Mon Feb 25 18:37:12 2019 BA1807A043415 LibV1.3.2 FirmV1.1.23  One of devices removed
+  info: PL 0 ST 0 ES 8 PS 1 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-22732 Mon Feb 25 18:38:26 2019  LibV1.3.2 FirmV  One of devices arrived
+  info: PL 0 ST 0 ES 8 PS 1083304605 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+ -2946 Info! Wait until eye transfer cnt 0
+ -13955 Info! Wait until eye transfer cnt 0
+ -11951 Info! Wait until eye transfer cnt 0
+ -8953 Info! Wait until eye transfer cnt 0
+ -34939 Info! Wait until eye transfer cnt 0
+ -42966 Info! Wait until eye transfer cnt 0
+ -34912 Info! Wait until eye transfer cnt 0
+ -10952 Info! Wait until eye transfer cnt 0
+ -14965 Info! Wait until eye transfer cnt 0
+ -8949 Info! Wait until eye transfer cnt 0
+ -12949 Info! Wait until eye transfer cnt 0
+ -9955 Info! Wait until eye transfer cnt 0
+ -6915 Info! Wait until eye transfer cnt 0
+ -5954 Info! Wait until eye transfer cnt 0
+ -5952 Info! Wait until eye transfer cnt 0
+ -1950 Info! Wait until eye transfer cnt 0
+ -7954 Info! Wait until eye transfer cnt 0
+ -7950 Info! Wait until eye transfer cnt 0
+ -9953 Info! Wait until eye transfer cnt 0
+ -6952 Info! Wait until eye transfer cnt 0
+ -6953 Info! Wait until eye transfer cnt 0
+ -4952 Info! Wait until eye transfer cnt 0
+ -18957 Info! Wait until eye transfer cnt 0
+ -8953 Info! Wait until eye transfer cnt 0
+ -6954 Info! Wait until eye transfer cnt 0
+ -8953 Info! Wait until eye transfer cnt 0
+ -7951 Info! Wait until eye transfer cnt 0
+ -1949 Info! Wait until eye transfer cnt 0
+ -4952 Info! Wait until eye transfer cnt 0
+ -2951 Info! Wait until eye transfer cnt 0
+ -11954 Info! Wait until eye transfer cnt 0
+ -10954 Info! Wait until eye transfer cnt 0
+ -13953 Info! Wait until eye transfer cnt 0
+E-0 Wed Mar 6 13:18:33 2019  LibV1.3.2 FirmV  Error! Device Driver interface Error!
+  info: PL 0 ST 0 ES 8 PS 0 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-4 Wed Mar 6 13:18:33 2019  LibV1.3.2 FirmV  Error! Device Driver interface Error!
+  info: PL 0 ST 0 ES 8 PS 0 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+ -27962 Info! Wait until eye transfer cnt 0
+ -2951 Info! Wait until eye transfer cnt 0
+ -15997 Info! Wait until eye transfer cnt 0
+ -21956 Info! Wait until eye transfer cnt 0
+ -21953 Info! Wait until eye transfer cnt 0
+ -1949 Info! Wait until eye transfer cnt 0
+ -11897 Info! Wait until eye transfer cnt 0
+ -8954 Info! Wait until eye transfer cnt 0
+ -14973 Info! Wait until eye transfer cnt 0
+E-6922 Mon Apr 1 16:11:55 2019  LibV1.3.2 FirmV  One of devices removed
+  info: PL 0 ST 0 ES 8 PS -2146500607 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+E-13352 Mon Apr 1 16:12:01 2019  LibV1.3.2 FirmV  One of devices arrived
+  info: PL 0 ST 0 ES 8 PS -2146500607 CS 0 FC 0 CF 0 CI 0 MK -1 CR -1 ID 0 CD 0
+ -7919 Info! Wait until eye transfer cnt 0
+ -40970 Info! Wait until eye transfer cnt 0
+ -10954 Info! Wait until eye transfer cnt 0
+ -1948 Info! Wait until eye transfer cnt 0
+ -4952 Info! Wait until eye transfer cnt 0
+ -13954 Info! Wait until eye transfer cnt 0

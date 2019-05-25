@@ -1,0 +1,15 @@
+.mainButtons{
+    -fx-background-color: #016ebc;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5em;
+    -fx-background-radius: 5em;
+    -fx-border-width: 1px;
+    -fx-border-color: transparent;
+    -fx-border-style: solid;
+    -fx-transition: 0.75s;
+}
+.mainButtons:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #016ebc;
+    -fx-cursor: hand;
+}

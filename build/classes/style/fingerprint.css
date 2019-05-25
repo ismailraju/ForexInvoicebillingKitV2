@@ -1,0 +1,32 @@
+.buttons{
+    -fx-background-color: transparent;
+    -fx-text-fill: #016ebc;
+    -fx-border-width: 1px;
+    -fx-border-color: #016ebc;
+    -fx-border-style: solid;
+    -fx-transition: 0.5s;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+}
+.buttons:hover{
+    -fx-background-color: #016ebc;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}
+
+.close_buttons{
+    -fx-background-color: #dc3545;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 2px;
+    -fx-border-color: #dc3545;
+    -fx-border-style: solid;
+    -fx-transition: 0.5s;
+    -fx-background-radius: 15px;
+    -fx-border-radius: 15px;
+    -fx-transition: 0.3s
+}
+.close_buttons:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #dc3545;
+    -fx-cursor: hand;
+}

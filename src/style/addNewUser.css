@@ -1,0 +1,15 @@
+.addNewUserButton{
+    -fx-background-color: transparent;
+    -fx-text-fill: #016ebc;
+    -fx-border-width: 2px;
+    -fx-border-color: #016ebc;
+    -fx-border-style: solid;
+    -fx-transition: 0.5s;
+    -fx-background-radius: 5em;
+    -fx-border-radius: 5em;
+}
+.addNewUserButton:hover{
+    -fx-background-color: #016ebc;
+    -fx-text-fill: #ffffff;
+    -fx-cursor: hand;
+}

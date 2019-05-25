@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.istl.fingerprint.controller.FingerprintScanController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="1000.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="1000.0" style="-fx-background-color: #016ebc;" text="Fingerprint Scan" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="60.0" prefHeight="540.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="540.0" prefWidth="1000.0">
+               <children>
+                  <Pane prefHeight="290.0" prefWidth="1000.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="287.0" prefWidth="1000.0">
+                           <children>
+                              <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <ImageView fitHeight="250.0" layoutX="37.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/left_hand.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone11" fitHeight="63.0" fitWidth="40.0" layoutX="38.0" layoutY="83.0" onMouseClicked="#icon1Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/l_small_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone14" fitHeight="71.0" fitWidth="40.0" layoutX="136.0" layoutY="58.0" onMouseClicked="#icon4Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/l_index_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone13" fitHeight="86.0" fitWidth="34.0" layoutX="104.0" layoutY="41.0" onMouseClicked="#icon3Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/l_middle_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone12" fitHeight="90.0" fitWidth="34.0" layoutX="69.0" layoutY="50.0" onMouseClicked="#icon2Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/l_ring_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone15" fitHeight="71.0" fitWidth="41.0" layoutX="173.0" layoutY="146.0" onMouseClicked="#icon5Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/l_thumb_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone5" fitHeight="25.0" fitWidth="25.0" layoutX="194.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone4" fitHeight="25.0" fitWidth="25.0" layoutX="144.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone3" fitHeight="25.0" fitWidth="25.0" layoutX="111.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone2" fitHeight="25.0" fitWidth="25.0" layoutX="80.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone1" fitHeight="25.0" fitWidth="25.0" layoutX="43.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="500.0">
+                                 <children>
+                                    <VBox alignment="CENTER" layoutY="-1.0" prefHeight="288.0" prefWidth="500.0">
+                                       <children>
+                                          <ImageView fx:id="viewFingerprint" fitHeight="275.0" pickOnBounds="true" preserveRatio="true" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffffff;">
+                                 <children>
+                                    <ImageView fitHeight="250.0" layoutX="35.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/right_hand.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone16" fitHeight="100.0" fitWidth="47.0" layoutX="35.0" layoutY="148.0" onMouseClicked="#icon6Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/r_thumb_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone17" fitHeight="81.0" fitWidth="32.0" layoutX="82.0" layoutY="59.0" onMouseClicked="#icon7Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/r_index_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone18" fitHeight="90.0" fitWidth="32.0" layoutX="115.0" layoutY="42.0" onMouseClicked="#icon8Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/r_middle_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone19" fitHeight="81.0" fitWidth="40.0" layoutX="147.0" layoutY="49.0" onMouseClicked="#icon9Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/r_ring_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone20" fitHeight="74.0" fitWidth="26.0" layoutX="186.0" layoutY="83.0" onMouseClicked="#icon10Action" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/r_small_blue.gif" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="icone6" fitHeight="25.0" fitWidth="25.0" layoutX="35.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone10" fitHeight="25.0" fitWidth="25.0" layoutX="190.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone9" fitHeight="25.0" fitWidth="25.0" layoutX="153.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone7" fitHeight="25.0" fitWidth="25.0" layoutX="87.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+                                    <ImageView fx:id="icone8" fitHeight="25.0" fitWidth="25.0" layoutX="123.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="83.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Button layoutX="52.0" layoutY="8.0" mnemonicParsing="false" onAction="#leftAction" prefHeight="50.0" prefWidth="115.0">
+                           <graphic>
+                              <ImageView fitHeight="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/left_four.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button layoutX="835.0" layoutY="8.0" mnemonicParsing="false" onAction="#rightAction" prefHeight="50.0" prefWidth="115.0">
+                           <graphic>
+                              <ImageView fitHeight="55.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/right_four.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="130.0" prefWidth="1000.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="124.0" prefWidth="1000.0" spacing="10.0">
+                           <children>
+                              <ImageView fx:id="leftlt" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="leftring" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="leftmdl" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="leftindex" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="leftthumb" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <Button mnemonicParsing="false" onAction="#thumbAction" prefHeight="63.0" prefWidth="113.0">
+                                 <graphic>
+                                    <ImageView fitHeight="71.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../resource/thumbs2.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <ImageView fx:id="rightthumb" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="rightindex" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="rightmdl" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="rightring" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="rightltl" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../resource/fingerprint.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="46.0" prefWidth="1000.0">
+                     <children>
+                        <HBox alignment="TOP_CENTER" prefHeight="46.0" prefWidth="1000.0" spacing="10.0">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#saveAction" prefHeight="30.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../../style/fingerprint.css" text="Save" />
+                              <Button mnemonicParsing="false" onAction="#closeAction" prefHeight="30.0" prefWidth="150.0" styleClass="buttons" stylesheets="@../../../../style/fingerprint.css" text="Close">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

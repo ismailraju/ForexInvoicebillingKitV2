@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Enroll_kit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.forexInvoice.model.Country</class>
+    <class>com.forexInvoice.model.Transaction</class>
+    <class>com.forexInvoice.model.Bank</class>
+    <class>com.forexInvoice.model.Currency</class>
+    <class>com.forexInvoice.model.Company</class>
+    <class>com.forexInvoice.model.Customer</class>
+    <class>com.forexInvoice.model.Recipient</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/forexinvoice?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/enroll_kit_sb?zeroDateTimeBehavior=convertToNull"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>-->
+      <!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/enroll_kit?zeroDateTimeBehavior=convertToNull"/>
+            <property name="javax.persistence.jdbc.user" value="root"/>
+            <property name="javax.persistence.jdbc.password" value=""/>-->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
