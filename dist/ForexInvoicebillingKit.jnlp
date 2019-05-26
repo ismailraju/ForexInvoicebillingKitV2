@@ -141,6 +141,9 @@
     <jar href="lib\spring-websocket-5.0.0.RELEASE.jar" size="413766" download="eager" />
     <jar href="lib\webcam-capture-0.3.13-SNAPSHOT.jar" size="431226" download="eager" />
   </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ForexInvoicebillingKit" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
   <jfx:javafx-desc  width="800" height="600" main-class="sb_pmo_biometric.SB_PMO_Biometric"  name="ForexInvoicebillingKit" />
   <update check="always"/>
 </jnlp>

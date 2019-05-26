@@ -75,7 +75,12 @@ public class GenaratePdf {
 //            list.add(new People("rrr", "fsdfsd"));
 //            list.add(new People("rrr", "fsdfsd"));
 //            list.add(new People("rrr", "fsdfsd"));
-            JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(null);
+            List<People> list = new ArrayList<People>();
+
+            list.add(new People("raj", "RAjjjjjj"));
+
+            JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(list, Boolean.FALSE);
+
             Map<String, Object> parameter = new HashMap<String, Object>();
             SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
             SimpleDateFormat format2 = new SimpleDateFormat("yyyy-MM-dd");
@@ -92,7 +97,7 @@ public class GenaratePdf {
             parameter.put("HeaderText10", t.getReceiveCurrency().getShortName() + " " + t.getAmountReceive());
             parameter.put("HeaderText11", t.getPaymentMethod());
             Customer cu = t.getCustomer();
-            parameter.put("HeaderText12", cu.getId());
+            parameter.put("HeaderText12", cu.getId()+"");
             parameter.put("HeaderText13", cu.getFulName());
             parameter.put("HeaderText14", format2.format(cu.getDob()));
             parameter.put("HeaderText15", cu.getTelephone());
@@ -105,7 +110,7 @@ public class GenaratePdf {
 
             Recipient r = t.getRecipient();
 
-            parameter.put("HeaderText23", r.getId());
+            parameter.put("HeaderText23", r.getId()+"");
             parameter.put("HeaderText24", r.getFulName());
             parameter.put("HeaderText25", format2.format(r.getDob()));
             parameter.put("HeaderText26", r.getTelephone());

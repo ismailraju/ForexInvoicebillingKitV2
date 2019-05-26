@@ -1,5 +1,5 @@
 #
-#Sun May 26 01:54:13 BDT 2019
+#Sun May 26 11:22:48 BDT 2019
 com.istl.enroll_kit.model.EnrollUtils=javax.persistence.Entity,javax.persistence.Table,javax.xml.bind.annotation.XmlRootElement,javax.persistence.NamedQueries
 com.istl.enroll_kit.model.EnrollPersonBiometric=javax.persistence.Entity,javax.persistence.Table,javax.xml.bind.annotation.XmlRootElement,javax.persistence.NamedQueries
 com.forexInvoice.model.Country=javax.persistence.Entity,javax.persistence.Table,javax.persistence.NamedQueries

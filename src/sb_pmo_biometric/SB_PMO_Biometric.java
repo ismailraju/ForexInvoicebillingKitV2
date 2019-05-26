@@ -4,13 +4,17 @@ import com.forexInvoice.model.Bank;
 import com.forexInvoice.model.Company;
 import com.forexInvoice.model.Transaction;
 import com.forexInvoice.pdf.GenaratePdf;
+import com.forexInvoice.pdfPrinter.PrintPdf;
 import com.forexInvoice.service.BankServiceImp;
 import com.forexInvoice.service.CompanyServiceImp;
 import com.forexInvoice.service.TransactionServiceImp;
 import com.forexInvoice.smtpmail.PdfTLSEmail;
 import com.istl.util.FieldValidation;
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -23,12 +27,13 @@ import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import javax.print.PrintException;
 import org.opencv.core.Core;
 
 public class SB_PMO_Biometric extends Application {
-    
+
     private Stage primaryStage = new Stage();
-    
+
     @Override
     public void start(Stage stage) throws Exception {
 //        Parent root = FXMLLoader.load(getClass().getResource("/com/istl/view/Login.fxml"));
@@ -38,11 +43,11 @@ public class SB_PMO_Biometric extends Application {
         primaryStage = stage;
         stage.setResizable(false);
         stage.setTitle("Transaction Form");
-        stage.getIcons().add(new Image("/logo/logo.png"));
+//        stage.getIcons().add(new Image("/logo/logo.png"));
         stage.setScene(scene);
         stage.show();
         stage.setOnCloseRequest(confirmCloseEventHandler);
-        
+
     }
     private EventHandler<WindowEvent> confirmCloseEventHandler = event -> {
         Alert closeConfirmation = new Alert(
@@ -70,7 +75,7 @@ public class SB_PMO_Biometric extends Application {
             System.out.println("unodc.UNODC.methodName()");
         }
     };
-    
+
     public static void main(String[] args) {
 
 //        BankServiceImp bankService = new BankServiceImp();
@@ -85,11 +90,22 @@ public class SB_PMO_Biometric extends Application {
         Company company = companyService.getCompany(1);
         GenaratePdf genaratePdf = new GenaratePdf();
         genaratePdf.genaratePdfByte(t, company);
-        
+
         PdfTLSEmail email = new PdfTLSEmail();
         email.sendPdfTLSEmail(t, company);
-        
+
+
+        PrintPdf printPdf = new PrintPdf();
+        String currentPath = System.getProperty("user.dir") + "/";
+        try {
+            printPdf.runPrintPdf(currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf");
+        } catch (PrintException ex) {
+            Logger.getLogger(SB_PMO_Biometric.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(SB_PMO_Biometric.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         launch(args);
     }
-    
+
 }

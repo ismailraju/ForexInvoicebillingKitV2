@@ -6,6 +6,7 @@ package com.forexInvoice.smtpmail;
  */
 import com.forexInvoice.model.Company;
 import com.forexInvoice.model.Transaction;
+import java.util.Date;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -19,9 +20,9 @@ public class PdfTLSEmail {
      * authentication) Use Authentication: Yes Port for TLS/STARTTLS: 587
      */
     public void sendPdfTLSEmail(Transaction t, Company c) {
- 
+
         String EMAIL = "automaticemailsender.GK@gmail.com";
-        String EMAIL_PS = "j3Et.#lxdd!JlNWpZ##kujar";
+        String EMAIL_PS = "j3Et.#lxdd!JlNWpZ##k";
         final String fromEmail = EMAIL; //requires valid gmail id
         final String password = EMAIL_PS; // correct password for gmail id
 
@@ -44,10 +45,11 @@ public class PdfTLSEmail {
         };
         Session session = Session.getInstance(props, auth);
 
-        String body = "Hello This is testing";
+        String body = "Customer Name: " + c.getName() + " " + " Send Amount: " + t.getAmountSend() + t.getSendCurrency().getShortName() + " Date: " + new Date() + " Transfer Method:  " + t.getPaymentMethod() + " Bank: " + t.getRecipient().getBank().getName() + " Branch: " + t.getRecipient().getBank().getBranchName() + " .";
 
-        String subject = "Test subject";
-        String fileName = "I-" + String.format("%06d", t.getId()) + ".pdf";
+        String subject = "dacco many transfer receipt";
+        String currentPath = System.getProperty("user.dir") + "/";
+        String fileName = currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf";
 
 //        EmailUtil.sendEmail(session, toEmail, "TLSEmail Testing Subject", "TLSEmail Testing Body");
         EmailUtil.sendAttachmentEmail(session, toEmail, subject, body, fileName);
