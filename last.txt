@@ -1,2 +1,0 @@
-DELETE FROM `enroll_person_biometric` WHERE person_id=22
-DELETE FROM `enroll_person` WHERE id=22

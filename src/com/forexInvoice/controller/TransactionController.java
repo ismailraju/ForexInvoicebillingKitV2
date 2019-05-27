@@ -1,7 +1,5 @@
 package com.forexInvoice.controller;
 
-import com.istl.controller.*;
-import com.canon.controller.CanonViewController;
 import com.forexInvoice.model.Bank;
 import com.forexInvoice.model.Company;
 import com.forexInvoice.model.Country;
@@ -10,6 +8,7 @@ import com.forexInvoice.model.Customer;
 import com.forexInvoice.model.Recipient;
 import com.forexInvoice.model.Transaction;
 import com.forexInvoice.pdf.GenaratePdf;
+import com.forexInvoice.pdfPrinter.PrintPdf;
 import com.forexInvoice.service.BankService;
 import com.forexInvoice.service.BankServiceImp;
 import com.forexInvoice.service.CompanyServiceImp;
@@ -18,25 +17,9 @@ import com.forexInvoice.service.CurrencyServiceImp;
 import com.forexInvoice.service.CustomerServiceImp;
 import com.forexInvoice.service.RecipientServiceImp;
 import com.forexInvoice.service.TransactionServiceImp;
+import com.forexInvoice.smtpmail.PdfTLSEmail;
 import com.google.gson.Gson;
-import com.istl.controller.enrollment.fingerprint.FingerprintEnrollmentController;
-import com.istl.enroll_kit.model.EnrollDistrict;
-import com.istl.enroll_kit.model.EnrollDivision;
-import com.istl.enroll_kit.model.EnrollLookup;
-import com.istl.enroll_kit.model.EnrollNationalityLookup;
-import com.istl.enroll_kit.model.EnrollPerson;
-import com.istl.enroll_kit.model.EnrollPersonBiometric;
-import com.istl.enroll_kit.model.EnrollStation;
 
-import com.istl.enroll_kit.model.EnrollUtils;
-
-import com.istl.iris.controller.MainController;
-import com.istl.service.EnrollStationService;
-import com.istl.service.EnrollUtilService;
-import com.istl.service.PersonService;
-import com.istl.util.FingerPrintEnrollmentUtils;
-import com.istl.util.Notification;
-import com.istl.util.User;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -66,10 +49,7 @@ import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 
 import javax.imageio.ImageIO;
-import com.istl.util.CanonUtil;
-import com.istl.util.FieldValidation;
-import com.istl.util.IrisUtil;
-import com.istl.util.SelectKeyComboBoxListener;
+
 import java.math.BigDecimal;
 
 import java.time.format.DateTimeFormatter;
@@ -90,7 +70,7 @@ import javafx.util.StringConverter;
 //import org.opencv.objdetect.CascadeClassifier;
 
 public class TransactionController implements Initializable {
-    
+
     @FXML
     public ComboBox<Bank> rbank;
     @FXML
@@ -99,7 +79,7 @@ public class TransactionController implements Initializable {
     private ComboBox<Currency> tsendCurrency;
     @FXML
     private ComboBox<Currency> treceiveCurrency;
-    
+
     @FXML
     private TextField cfulName;
     @FXML
@@ -118,7 +98,7 @@ public class TransactionController implements Initializable {
     private TextField cpurpose;
     @FXML
     private TextField coccupation;
-    
+
     @FXML
     private TextField rfulName;
     @FXML
@@ -129,14 +109,14 @@ public class TransactionController implements Initializable {
     private TextField raddress;
     @FXML
     private TextField ridNumber;
-    
+
     @FXML
     private TextField rissuePlace;
     @FXML
     private TextField rpurpose;
     @FXML
     private TextField rreceivedMethod;
-    
+
     @FXML
     private TextField ttransactionId;
     @FXML
@@ -151,7 +131,7 @@ public class TransactionController implements Initializable {
     private TextField tamountReceive;
     @FXML
     private TextField tpaymentMethod;
-    
+
     @FXML
     private Button saveButton;
     public BankServiceImp bankService = new BankServiceImp();
@@ -161,12 +141,12 @@ public class TransactionController implements Initializable {
     public RecipientServiceImp recipientService = new RecipientServiceImp();
     public TransactionServiceImp transactionService = new TransactionServiceImp();
     public CompanyServiceImp companyService = new CompanyServiceImp();
-    
+
     @Override
     @FXML
     public void initialize(URL url, ResourceBundle rb) {
         Platform.runLater(() -> cfulName.requestFocus());
-        
+
         List<Bank> banks = bankService.getBanks();
         List<Country> countrys = countryService.getCountrys();
         List<Currency> currencys = currencyService.getCurrencys();
@@ -176,33 +156,33 @@ public class TransactionController implements Initializable {
 //            banksO.add(b);
 //        }
         try {
-            
+
             this.rbank.setItems(FXCollections.observableArrayList(banks));
             this.tcountry.setItems(FXCollections.observableArrayList(countrys));
             this.tsendCurrency.setItems(FXCollections.observableArrayList(currencys));
             this.treceiveCurrency.setItems(FXCollections.observableArrayList(currencys));
-            
+
         } catch (Exception e) {
             e.printStackTrace();
         }
         saveButton.setDefaultButton(true);
-        
+
     }
-    
+
     @FXML
     protected void resetAction(ActionEvent event) {
         clearAll();
     }
-    
+
     @FXML
     protected void submitAction(ActionEvent event) throws IOException {
-        
+
         if (isInputValid()) {
             try {
                 Customer c = new Customer();
                 Recipient r = new Recipient();
                 Transaction t = new Transaction();
-                
+
                 c.setFulName(cfulName.getText());
                 if (cdob.getValue() != null) {
                     LocalDate ldate = cdob.getValue();
@@ -210,20 +190,20 @@ public class TransactionController implements Initializable {
                     Date date = Date.from(instant);
                     System.out.println(date);
                     c.setDob(date);
-                    
+
                 }
-                
+
                 c.setTelephone(ctelephone.getText());
                 c.setAddress(caddress.getText());
                 c.setIdNumber(cidNumber.getText());
-                
+
                 if (cidExpiryDate.getValue() != null) {
                     LocalDate ldate = cidExpiryDate.getValue();
                     Instant instant = Instant.from(ldate.atStartOfDay(ZoneId.systemDefault()));
                     Date date = Date.from(instant);
                     System.out.println(date);
                     c.setIdExpiryDate(date);
-                    
+
                 }
                 c.setIssuePlace(cissuePlace.getText());
                 c.setPurpose(cpurpose.getText());
@@ -236,62 +216,74 @@ public class TransactionController implements Initializable {
                     Date date = Date.from(instant);
                     System.out.println(date);
                     r.setDob(date);
-                    
+
                 }
-                
+
                 r.setTelephone(rtelephone.getText());
                 r.setAddress(raddress.getText());
                 r.setIdNumber(ridNumber.getText());
-                
+
                 r.setReceivedMethod(rreceivedMethod.getText());
                 r.setBank(rbank.getValue());
 /////////////////////////////////      
 
                 t.setSendCurrency(tsendCurrency.getValue());
                 if ((tamountSend.getText() != null) && (tamountSend.getText() != "")) {
-                    
+
                     BigDecimal bigDecimal = new BigDecimal(tamountSend.getText());
                     t.setAmountSend(bigDecimal);
                 }
                 if ((tcommission.getText() != null) && (tcommission.getText() != "")) {
-                    
+
                     BigDecimal bigDecimal = new BigDecimal(tcommission.getText());
                     t.setCommission(bigDecimal);
                 }
-                
+
                 if ((ttotal.getText() != null) && (ttotal.getText() != "")) {
-                    
+
                     BigDecimal bigDecimal = new BigDecimal(ttotal.getText());
                     t.setTotal(bigDecimal);
                 }
-                
+
                 t.setCountry(tcountry.getValue());
                 t.setReceiveCurrency(treceiveCurrency.getValue());
-                
+
                 if ((texchangeRate.getText() != null) && (texchangeRate.getText() != "")) {
-                    
+
                     BigDecimal bigDecimal = new BigDecimal(texchangeRate.getText());
                     t.setExchangeRate(bigDecimal);
                 }
-                
+
                 if ((tamountReceive.getText() != null) && (tamountReceive.getText() != "")) {
-                    
+
                     BigDecimal bigDecimal = new BigDecimal(tamountReceive.getText());
                     t.setAmountReceive(bigDecimal);
                 }
-                
+
                 t.setPaymentMethod(tpaymentMethod.getText());
-                
+
                 Customer addCustomer = customerService.addCustomer(c);
                 Recipient addRecipient = recipientService.addRecipient(r);
-                
+
                 t.setCustomer(addCustomer);
                 t.setRecipient(addRecipient);
                 transactionService.addTransaction(t);
-                
+
                 Company company = companyService.getCompany(1);
-                GenaratePdf genaratePdf=new GenaratePdf();
+                GenaratePdf genaratePdf = new GenaratePdf();
                 genaratePdf.genaratePdfByte(t, company);
+
+                PdfTLSEmail email = new PdfTLSEmail();
+                email.sendPdfTLSEmail(t, company);
+
+                PrintPdf printPdf = new PrintPdf();
+                String currentPath = System.getProperty("user.dir") + "/";
+                try {
+//                    printPdf.runPrintPdf(currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf");
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+
 /////////////////////////////////////////////////
 //                if (result) {
 //                    Notification.successfullyMessage("Registration Successful");
@@ -302,7 +294,7 @@ public class TransactionController implements Initializable {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            
+
         }
     }
 
@@ -313,9 +305,9 @@ public class TransactionController implements Initializable {
      */
     private void clearAll() {
         rbank.setValue(null);
-        
+
         cfulName.clear();
-        
+
         cdob.setValue(null);
 
 //        FieldValidation.removeColor(phoneNumber);
@@ -356,9 +348,9 @@ public class TransactionController implements Initializable {
             return true;
         } else {
             // Show the error message.
-            Notification.errorMessage("Mandatory fields should not be empty");
+//            Notification.errorMessage("Mandatory fields should not be empty");
             return false;
         }
     }
-    
+
 }
