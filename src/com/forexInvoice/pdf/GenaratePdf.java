@@ -60,6 +60,7 @@ public class GenaratePdf {
 //            String currentPath = System.getProperty("user.dir") + "/resource/";
 //            String currentPath = System.getProperty("user.dir") + "/src/main/java/com/raju/pdf/";
             String currentPath = System.getProperty("user.dir") + "/";
+
 //        JasperReport jasperReport = JasperCompileManager.compileReport("/logo/ForexInvoiceBilling.fxml");
 //            JasperReport jasperReport = JasperCompileManager.compileReport(currentPath + "DijnetHUReportEn.jrxml");
 //            JasperReport jasperReport = (JasperReport) JRLoader.loadObjectFromFile(currentPath + "DijnetHUReportEn.jasper");
@@ -97,11 +98,12 @@ public class GenaratePdf {
             parameter.put("HeaderText10", t.getReceiveCurrency().getShortName() + " " + t.getAmountReceive());
             parameter.put("HeaderText11", t.getPaymentMethod());
             Customer cu = t.getCustomer();
-            parameter.put("HeaderText12", cu.getId()+"");
+            parameter.put("HeaderText12", cu.getId() + "");
             parameter.put("HeaderText13", cu.getFulName());
             parameter.put("HeaderText14", format2.format(cu.getDob()));
             parameter.put("HeaderText15", cu.getTelephone());
             parameter.put("HeaderText16", cu.getAddress());
+            parameter.put("HeaderText22", cu.getEmail());
             parameter.put("HeaderText17", cu.getIdNumber());
             parameter.put("HeaderText18", format2.format(cu.getIdExpiryDate()));
             parameter.put("HeaderText19", cu.getIssuePlace());
@@ -110,11 +112,12 @@ public class GenaratePdf {
 
             Recipient r = t.getRecipient();
 
-            parameter.put("HeaderText23", r.getId()+"");
+            parameter.put("HeaderText23", r.getId() + "");
             parameter.put("HeaderText24", r.getFulName());
             parameter.put("HeaderText25", format2.format(r.getDob()));
             parameter.put("HeaderText26", r.getTelephone());
             parameter.put("HeaderText27", r.getAddress());
+            parameter.put("HeaderText23", r.getEmail());
             parameter.put("HeaderText28", r.getIdNumber());
             parameter.put("HeaderText29", r.getReceivedMethod());
             parameter.put("HeaderText30", r.getBank().getName());
@@ -122,6 +125,8 @@ public class GenaratePdf {
 
             JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameter, beanColDataSource);
             JasperExportManager.exportReportToPdfFile(jasperPrint, currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf");
+
+            System.out.println("PDF CREATED: " + currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf");
             byte[] pdfByte = JasperExportManager.exportReportToPdf(jasperPrint);
 
             return pdfByte;

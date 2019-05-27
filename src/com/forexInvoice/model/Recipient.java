@@ -57,6 +57,8 @@ public class Recipient implements Serializable {
     @Basic(optional = false)
     @Column(name = "Address")
     private String address;
+    @Column(name = "email")
+    private String email;
     @Column(name = "id_number")
     private String idNumber;
     @Basic(optional = false)
@@ -146,6 +148,14 @@ public class Recipient implements Serializable {
         this.bank = bank;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -170,5 +180,5 @@ public class Recipient implements Serializable {
     public String toString() {
         return "com.forexInvoice.model.Recipient[ id=" + id + " ]";
     }
-    
+
 }

@@ -11,8 +11,8 @@
     <class>com.forexInvoice.model.Recipient</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/forexinvoice?zeroDateTimeBehavior=convertToNull"/>
-      <property name="javax.persistence.jdbc.user" value="root"/>
-      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.user" value="forexinvoice"/>
+      <property name="javax.persistence.jdbc.password" value="forexinvoice"/>
       <!--      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/enroll_kit_sb?zeroDateTimeBehavior=convertToNull"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
             <property name="javax.persistence.jdbc.password" value=""/>-->

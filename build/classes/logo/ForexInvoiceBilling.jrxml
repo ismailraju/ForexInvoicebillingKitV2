@@ -99,11 +99,11 @@
 		<band height="700" splitType="Stretch">
 			<printWhenExpression><![CDATA[true]]></printWhenExpression>
 			<textField>
-				<reportElement x="0" y="200" width="100" height="15" uuid="9fc1b632-d020-4e37-bbb0-c20b2d976e31">
+				<reportElement x="0" y="215" width="100" height="15" uuid="9fc1b632-d020-4e37-bbb0-c20b2d976e31">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Expiry Date"]]></textFieldExpression>
 			</textField>
@@ -113,7 +113,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText7}]]></textFieldExpression>
 			</textField>
@@ -122,16 +122,16 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Full Name"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="215" width="100" height="15" uuid="e0f0f054-74a1-4c00-90b3-a7dd11dac1a5">
+				<reportElement x="0" y="230" width="100" height="15" uuid="e0f0f054-74a1-4c00-90b3-a7dd11dac1a5">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Issue Place"]]></textFieldExpression>
 			</textField>
@@ -141,7 +141,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText5}]]></textFieldExpression>
 			</textField>
@@ -151,7 +151,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText4}]]></textFieldExpression>
 			</textField>
@@ -161,16 +161,16 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText6}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="185" width="100" height="15" uuid="a4a7c9a4-281b-4f01-a3c8-0a470e088514">
+				<reportElement x="0" y="200" width="100" height="15" uuid="a4a7c9a4-281b-4f01-a3c8-0a470e088514">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Number"]]></textFieldExpression>
 			</textField>
@@ -179,7 +179,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["DOB"]]></textFieldExpression>
 			</textField>
@@ -188,7 +188,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Telephone"]]></textFieldExpression>
 			</textField>
@@ -197,7 +197,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Address"]]></textFieldExpression>
 			</textField>
@@ -207,7 +207,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Country"]]></textFieldExpression>
 			</textField>
@@ -217,7 +217,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Amount Receiving"]]></textFieldExpression>
 			</textField>
@@ -227,7 +227,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Exch. Rate"]]></textFieldExpression>
 			</textField>
@@ -237,7 +237,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Method Of Payment"]]></textFieldExpression>
 			</textField>
@@ -270,48 +270,48 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Customer ID#"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="230" width="100" height="15" uuid="7b83e8bc-8e68-4663-a90b-3984fc5d787b">
+				<reportElement x="0" y="245" width="100" height="15" uuid="7b83e8bc-8e68-4663-a90b-3984fc5d787b">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Purpose"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="245" width="100" height="15" uuid="1ca389cc-71fe-4be8-a3bf-831c9f15cfe2">
+				<reportElement x="0" y="260" width="100" height="15" uuid="1ca389cc-71fe-4be8-a3bf-831c9f15cfe2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Occupation"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="280" width="270" height="15" uuid="b97a96aa-c3e7-4968-bb25-124ce456638a">
+				<reportElement x="0" y="285" width="270" height="15" uuid="b97a96aa-c3e7-4968-bb25-124ce456638a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Customers Signature : ..............................."]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="266" y="280" width="250" height="15" uuid="3b370d90-d06c-46da-bad1-f83d6d1a2605">
+				<reportElement x="266" y="285" width="250" height="15" uuid="3b370d90-d06c-46da-bad1-f83d6d1a2605">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Accepted By : ........................................"]]></textFieldExpression>
 			</textField>
@@ -321,7 +321,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Transaction ID "]]></textFieldExpression>
 			</textField>
@@ -331,7 +331,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Commission"]]></textFieldExpression>
 			</textField>
@@ -341,7 +341,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Account Sending"]]></textFieldExpression>
 			</textField>
@@ -351,7 +351,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
 			</textField>
@@ -362,7 +362,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText9}]]></textFieldExpression>
 			</textField>
@@ -373,7 +373,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText8}]]></textFieldExpression>
 			</textField>
@@ -384,7 +384,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText10}]]></textFieldExpression>
 			</textField>
@@ -395,7 +395,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText11}]]></textFieldExpression>
 			</textField>
@@ -405,7 +405,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText15}]]></textFieldExpression>
 			</textField>
@@ -415,47 +415,47 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText12}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="245" width="100" height="15" uuid="2da76250-86d7-4be1-9441-a224b51234fb">
+				<reportElement x="120" y="260" width="100" height="15" uuid="2da76250-86d7-4be1-9441-a224b51234fb">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText21}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="230" width="100" height="15" uuid="a7ba9513-45b1-43f2-9b70-8c6aa06126a3">
+				<reportElement x="120" y="245" width="100" height="15" uuid="a7ba9513-45b1-43f2-9b70-8c6aa06126a3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText20}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="215" width="100" height="15" uuid="20ed0ed0-74a3-40d2-9634-110048e0ef6e">
+				<reportElement x="120" y="230" width="100" height="15" uuid="20ed0ed0-74a3-40d2-9634-110048e0ef6e">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText19}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="185" width="100" height="15" uuid="2a07fca0-3dba-430d-b3db-a964c9b649ac">
+				<reportElement x="120" y="200" width="100" height="15" uuid="2a07fca0-3dba-430d-b3db-a964c9b649ac">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText17}]]></textFieldExpression>
 			</textField>
@@ -465,7 +465,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText13}]]></textFieldExpression>
 			</textField>
@@ -475,7 +475,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText16}]]></textFieldExpression>
 			</textField>
@@ -485,26 +485,26 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText14}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="200" width="100" height="15" uuid="b401fe06-24fc-494f-9950-97691fc148ec">
+				<reportElement x="120" y="215" width="100" height="15" uuid="b401fe06-24fc-494f-9950-97691fc148ec">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText18}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="230" width="100" height="15" uuid="a8a03150-19c7-491b-90a8-08133c950599">
+				<reportElement x="380" y="245" width="100" height="15" uuid="a8a03150-19c7-491b-90a8-08133c950599">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText31}]]></textFieldExpression>
 			</textField>
@@ -513,25 +513,25 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText24}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="200" width="100" height="15" uuid="793fcef2-b29d-41e0-9ef4-ca0706a8a083">
+				<reportElement x="380" y="215" width="100" height="15" uuid="793fcef2-b29d-41e0-9ef4-ca0706a8a083">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText29}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="215" width="100" height="15" uuid="b56683a8-957d-46ae-a6ec-aaa170dd66fc">
+				<reportElement x="380" y="230" width="100" height="15" uuid="b56683a8-957d-46ae-a6ec-aaa170dd66fc">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText30}]]></textFieldExpression>
 			</textField>
@@ -540,7 +540,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText27}]]></textFieldExpression>
 			</textField>
@@ -549,7 +549,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText25}]]></textFieldExpression>
 			</textField>
@@ -558,16 +558,16 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText23}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="185" width="100" height="15" uuid="94a20448-0232-4373-bce2-0cf8e101949a">
+				<reportElement x="380" y="200" width="100" height="15" uuid="94a20448-0232-4373-bce2-0cf8e101949a">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText28}]]></textFieldExpression>
 			</textField>
@@ -576,7 +576,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText26}]]></textFieldExpression>
 			</textField>
@@ -586,7 +586,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Telephone"]]></textFieldExpression>
 			</textField>
@@ -596,37 +596,37 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Recipient ID#"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="230" width="100" height="15" uuid="c73bc738-7346-4fa4-98ae-c0cd3f0893b2">
+				<reportElement x="265" y="245" width="100" height="15" uuid="c73bc738-7346-4fa4-98ae-c0cd3f0893b2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Branch Name"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="215" width="100" height="15" uuid="6d762edb-8c43-4cc4-be24-874c84ec82ff">
+				<reportElement x="265" y="230" width="100" height="15" uuid="6d762edb-8c43-4cc4-be24-874c84ec82ff">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Bank Name"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="185" width="100" height="15" uuid="d60ebb43-d6ce-4e17-9e36-e16afd515de2">
+				<reportElement x="265" y="200" width="100" height="15" uuid="d60ebb43-d6ce-4e17-9e36-e16afd515de2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Number"]]></textFieldExpression>
 			</textField>
@@ -636,7 +636,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Full Name"]]></textFieldExpression>
 			</textField>
@@ -646,7 +646,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Address"]]></textFieldExpression>
 			</textField>
@@ -656,17 +656,17 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["DOB"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="200" width="100" height="15" uuid="e9753375-ad07-42b8-b0c9-6d64e1a42b32">
+				<reportElement x="265" y="215" width="100" height="15" uuid="e9753375-ad07-42b8-b0c9-6d64e1a42b32">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Received Method"]]></textFieldExpression>
 			</textField>
@@ -680,14 +680,14 @@
 				</graphicElement>
 			</line>
 			<textField>
-				<reportElement x="266" y="660" width="250" height="15" uuid="2ee8a38c-ee34-445d-9c38-323e607558e3">
+				<reportElement x="266" y="665" width="250" height="15" uuid="2ee8a38c-ee34-445d-9c38-323e607558e3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Accepted By : ........................................"]]></textFieldExpression>
 			</textField>
@@ -697,7 +697,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["DOB"]]></textFieldExpression>
 			</textField>
@@ -719,7 +719,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Recipient ID#"]]></textFieldExpression>
 			</textField>
@@ -729,7 +729,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText5}]]></textFieldExpression>
 			</textField>
@@ -739,7 +739,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Method Of Payment"]]></textFieldExpression>
 			</textField>
@@ -749,7 +749,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText16}]]></textFieldExpression>
 			</textField>
@@ -771,7 +771,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Full Name"]]></textFieldExpression>
 			</textField>
@@ -781,7 +781,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Account Sending"]]></textFieldExpression>
 			</textField>
@@ -791,26 +791,26 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Commission"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="565" width="100" height="15" uuid="56e62592-8afb-4aa5-990c-6b8be8352475">
+				<reportElement x="0" y="580" width="100" height="15" uuid="56e62592-8afb-4aa5-990c-6b8be8352475">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Number"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="595" width="100" height="15" uuid="c76e85d3-767d-4758-8196-7d00808819c2">
+				<reportElement x="265" y="610" width="100" height="15" uuid="c76e85d3-767d-4758-8196-7d00808819c2">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Bank Name"]]></textFieldExpression>
 			</textField>
@@ -820,7 +820,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText6}]]></textFieldExpression>
 			</textField>
@@ -829,16 +829,16 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["DOB"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="595" width="100" height="15" uuid="eb535f90-7633-41b3-9f8b-771f0025b2dd">
+				<reportElement x="380" y="610" width="100" height="15" uuid="eb535f90-7633-41b3-9f8b-771f0025b2dd">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText30}]]></textFieldExpression>
 			</textField>
@@ -848,7 +848,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Amount Receiving"]]></textFieldExpression>
 			</textField>
@@ -858,7 +858,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Telephone"]]></textFieldExpression>
 			</textField>
@@ -868,7 +868,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText12}]]></textFieldExpression>
 			</textField>
@@ -877,7 +877,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Telephone"]]></textFieldExpression>
 			</textField>
@@ -887,7 +887,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText15}]]></textFieldExpression>
 			</textField>
@@ -898,7 +898,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText10}]]></textFieldExpression>
 			</textField>
@@ -907,7 +907,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText24}]]></textFieldExpression>
 			</textField>
@@ -917,56 +917,56 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText13}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="625" width="100" height="15" uuid="6b72ff20-4fdb-411c-97b1-97430d926d3c">
+				<reportElement x="120" y="640" width="100" height="15" uuid="6b72ff20-4fdb-411c-97b1-97430d926d3c">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText21}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="565" width="100" height="15" uuid="59be9d44-3b11-485b-a1cb-5edc2c6e5024">
+				<reportElement x="265" y="580" width="100" height="15" uuid="59be9d44-3b11-485b-a1cb-5edc2c6e5024">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Number"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="565" width="100" height="15" uuid="2c034589-df9e-4f8c-a327-dbbfcef0b16d">
+				<reportElement x="120" y="580" width="100" height="15" uuid="2c034589-df9e-4f8c-a327-dbbfcef0b16d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText17}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="610" width="100" height="15" uuid="a77e7ec1-1e0f-4785-be5d-464565185784">
+				<reportElement x="265" y="625" width="100" height="15" uuid="a77e7ec1-1e0f-4785-be5d-464565185784">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Branch Name"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="580" width="100" height="15" uuid="5d4d2357-dfdc-4faf-9615-dd8a6eee1607">
+				<reportElement x="0" y="595" width="100" height="15" uuid="5d4d2357-dfdc-4faf-9615-dd8a6eee1607">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["ID Expiry Date"]]></textFieldExpression>
 			</textField>
@@ -975,16 +975,16 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Address"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="625" width="100" height="15" uuid="50586402-7659-49ae-b169-d804b0991795">
+				<reportElement x="0" y="640" width="100" height="15" uuid="50586402-7659-49ae-b169-d804b0991795">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Occupation"]]></textFieldExpression>
 			</textField>
@@ -993,27 +993,27 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Full Name"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="610" width="100" height="15" uuid="dfe902ca-46a1-4f0a-bcaf-5329d504d011">
+				<reportElement x="120" y="625" width="100" height="15" uuid="dfe902ca-46a1-4f0a-bcaf-5329d504d011">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText20}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="580" width="100" height="15" uuid="90ecc708-4c8b-43e4-a45e-8ba66b153d03">
+				<reportElement x="120" y="595" width="100" height="15" uuid="90ecc708-4c8b-43e4-a45e-8ba66b153d03">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText18}]]></textFieldExpression>
 			</textField>
@@ -1023,7 +1023,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText14}]]></textFieldExpression>
 			</textField>
@@ -1033,27 +1033,27 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Exch. Rate"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="580" width="100" height="15" uuid="4a6365df-408b-4c6c-a398-e9912adaec94">
+				<reportElement x="380" y="595" width="100" height="15" uuid="4a6365df-408b-4c6c-a398-e9912adaec94">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText29}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="660" width="270" height="15" uuid="69a70c85-2b8d-410a-b75e-f0fb72e0dee7">
+				<reportElement x="0" y="665" width="270" height="15" uuid="69a70c85-2b8d-410a-b75e-f0fb72e0dee7">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Customers Signature : ..............................."]]></textFieldExpression>
 			</textField>
@@ -1063,7 +1063,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Total"]]></textFieldExpression>
 			</textField>
@@ -1073,7 +1073,7 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText7}]]></textFieldExpression>
 			</textField>
@@ -1084,7 +1084,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText11}]]></textFieldExpression>
 			</textField>
@@ -1095,26 +1095,26 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText9}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="610" width="100" height="15" uuid="ea42bb74-4b86-4d2e-9fed-ece2570dfb80">
+				<reportElement x="0" y="625" width="100" height="15" uuid="ea42bb74-4b86-4d2e-9fed-ece2570dfb80">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Purpose"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="120" y="595" width="100" height="15" uuid="74d96b91-cff3-428c-8a52-93ce582b069d">
+				<reportElement x="120" y="610" width="100" height="15" uuid="74d96b91-cff3-428c-8a52-93ce582b069d">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText19}]]></textFieldExpression>
 			</textField>
@@ -1123,7 +1123,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText27}]]></textFieldExpression>
 			</textField>
@@ -1132,7 +1132,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText26}]]></textFieldExpression>
 			</textField>
@@ -1141,7 +1141,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText25}]]></textFieldExpression>
 			</textField>
@@ -1150,7 +1150,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText23}]]></textFieldExpression>
 			</textField>
@@ -1160,35 +1160,35 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Address"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="610" width="100" height="15" uuid="150376d9-56a7-47b9-9dc6-d66fd1ff1658">
+				<reportElement x="380" y="625" width="100" height="15" uuid="150376d9-56a7-47b9-9dc6-d66fd1ff1658">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText31}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="595" width="100" height="15" uuid="595ff971-9052-4945-b783-e13dd7ee5172">
+				<reportElement x="0" y="610" width="100" height="15" uuid="595ff971-9052-4945-b783-e13dd7ee5172">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Issue Place"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="265" y="580" width="100" height="15" uuid="cbba04bf-53bf-4340-923c-91ac7d378d60">
+				<reportElement x="265" y="595" width="100" height="15" uuid="cbba04bf-53bf-4340-923c-91ac7d378d60">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Received Method"]]></textFieldExpression>
 			</textField>
@@ -1197,16 +1197,16 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Customer ID#"]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="380" y="565" width="100" height="15" uuid="9727434f-1f77-48ee-b584-04aaea6119a4">
+				<reportElement x="380" y="580" width="100" height="15" uuid="9727434f-1f77-48ee-b584-04aaea6119a4">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans"/>
+					<font fontName="Arial"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText28}]]></textFieldExpression>
 			</textField>
@@ -1215,7 +1215,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Country"]]></textFieldExpression>
 			</textField>
@@ -1224,7 +1224,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText4}]]></textFieldExpression>
 			</textField>
@@ -1234,7 +1234,7 @@
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{HeaderText8}]]></textFieldExpression>
 			</textField>
@@ -1243,7 +1243,7 @@
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<textElement>
-					<font fontName="DejaVu Sans" isBold="true"/>
+					<font fontName="Arial" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA["Transaction ID "]]></textFieldExpression>
 			</textField>
@@ -1278,6 +1278,82 @@
 				</reportElement>
 				<textElement textAlignment="Right"/>
 				<textFieldExpression><![CDATA[$P{HeaderText2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="185" width="100" height="15" uuid="18c51e7e-3bb5-4532-a586-450346127d07">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Email"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="185" width="100" height="15" uuid="b81953a7-b23f-4c5e-959f-69fabb2b5267">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HeaderText22}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="185" width="100" height="15" uuid="fa6412b6-b082-4abc-84d7-2b99b9bfda99">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["ID Number"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="184" width="100" height="15" uuid="c450bb87-ab9a-4c1d-b3ad-60ab29250fee">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HeaderText23}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="565" width="100" height="15" uuid="17b6abf1-7ec5-4050-afb9-3ad33cd2b32f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Email"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="565" width="100" height="15" uuid="904a220f-39b6-42eb-95cf-bef641556298">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HeaderText22}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="565" width="100" height="15" uuid="9ddabbfa-7bf6-42f8-b3ad-bb65c1574429">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Email"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="565" width="100" height="15" uuid="0e400684-8f3d-4284-b783-562f07872033">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{HeaderText23}]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageHeader>

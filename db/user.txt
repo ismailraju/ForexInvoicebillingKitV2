@@ -1,0 +1,16 @@
+create user 'forexinvoice'@'%' identified by 'forexinvoice';
+grant all privileges on *.* to 'forexinvoice'@'%' with grant option;
+flush privileges;
+
+create user 'forexinvoice'@'127.0.0.1' identified by 'forexinvoice';
+grant all privileges on *.* to 'forexinvoice'@'127.0.0.1' with grant option;
+flush privileges;
+
+create user 'forexinvoice'@'localhost' identified by 'forexinvoice';
+grant all privileges on *.* to 'forexinvoice'@'localhost' with grant option;
+flush privileges;
+
+
+ ALTER TABLE `customer` ADD `email` VARCHAR(255) NULL AFTER `Address`;
+
+ ALTER TABLE `recipient` ADD `email` VARCHAR(255) NULL AFTER `Address`;

@@ -1,5 +1,6 @@
 package com.forexInvoice.controller;
 
+import com.forexInvoice.main.Notification;
 import com.forexInvoice.model.Bank;
 import com.forexInvoice.model.Company;
 import com.forexInvoice.model.Country;
@@ -53,16 +54,23 @@ import javax.imageio.ImageIO;
 import java.math.BigDecimal;
 
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import javafx.application.Platform;
 import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Alert;
 
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonBar;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 
 import javafx.util.StringConverter;
+import javax.print.PrintService;
+import javax.print.PrintServiceLookup;
 //import org.opencv.core.Core;
 //import org.opencv.core.Mat;
 //import org.opencv.core.MatOfRect;
@@ -79,6 +87,8 @@ public class TransactionController implements Initializable {
     private ComboBox<Currency> tsendCurrency;
     @FXML
     private ComboBox<Currency> treceiveCurrency;
+    @FXML
+    private ComboBox<String> tprinterName;
 
     @FXML
     private TextField cfulName;
@@ -87,7 +97,7 @@ public class TransactionController implements Initializable {
     @FXML
     private TextField ctelephone;
     @FXML
-    private TextField caddress;
+    private TextArea caddress;
     @FXML
     private TextField cidNumber;
     @FXML
@@ -106,14 +116,14 @@ public class TransactionController implements Initializable {
     @FXML
     private TextField rtelephone;
     @FXML
-    private TextField raddress;
+    private TextArea raddress;
     @FXML
     private TextField ridNumber;
 
-    @FXML
-    private TextField rissuePlace;
-    @FXML
-    private TextField rpurpose;
+//    @FXML
+//    private TextField rissuePlace;
+//    @FXML
+//    private TextField rpurpose;
     @FXML
     private TextField rreceivedMethod;
 
@@ -131,6 +141,10 @@ public class TransactionController implements Initializable {
     private TextField tamountReceive;
     @FXML
     private TextField tpaymentMethod;
+    @FXML
+    private TextField cemail;
+    @FXML
+    private TextField remail;
 
     @FXML
     private Button saveButton;
@@ -150,6 +164,20 @@ public class TransactionController implements Initializable {
         List<Bank> banks = bankService.getBanks();
         List<Country> countrys = countryService.getCountrys();
         List<Currency> currencys = currencyService.getCurrencys();
+        ObservableList<String> printers = FXCollections.observableArrayList();
+
+        try {
+            PrintService[] printServices = PrintServiceLookup.lookupPrintServices(null, null);
+            System.out.println("Number of print services: " + printServices.length);
+
+            for (PrintService printer : printServices) {
+                String sss = printer.getName();
+                printers.add(sss);
+                System.out.println("Printer: " + printer.getName());
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 //        ObservableList<Bank> banksO = FXCollections.observableArrayList();
 //        for (Bank b : banks) {
@@ -161,6 +189,8 @@ public class TransactionController implements Initializable {
             this.tcountry.setItems(FXCollections.observableArrayList(countrys));
             this.tsendCurrency.setItems(FXCollections.observableArrayList(currencys));
             this.treceiveCurrency.setItems(FXCollections.observableArrayList(currencys));
+//            this.tprinterName.setItems(FXCollections.observableArrayList(printers));
+            this.tprinterName.setItems(printers);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -195,6 +225,7 @@ public class TransactionController implements Initializable {
 
                 c.setTelephone(ctelephone.getText());
                 c.setAddress(caddress.getText());
+                c.setEmail(cemail.getText());
                 c.setIdNumber(cidNumber.getText());
 
                 if (cidExpiryDate.getValue() != null) {
@@ -221,6 +252,7 @@ public class TransactionController implements Initializable {
 
                 r.setTelephone(rtelephone.getText());
                 r.setAddress(raddress.getText());
+                r.setEmail(remail.getText());
                 r.setIdNumber(ridNumber.getText());
 
                 r.setReceivedMethod(rreceivedMethod.getText());
@@ -265,32 +297,61 @@ public class TransactionController implements Initializable {
                 Customer addCustomer = customerService.addCustomer(c);
                 Recipient addRecipient = recipientService.addRecipient(r);
 
-                t.setCustomer(addCustomer);
-                t.setRecipient(addRecipient);
-                transactionService.addTransaction(t);
+                try {
+                    t.setCustomer(addCustomer);
+                    t.setRecipient(addRecipient);
+                    transactionService.addTransaction(t);
+
+                    Notification.successfullyMessage("Save Successful");
+//                    clearAll();
+                } catch (Exception e) {
+                    Notification.errorMessage(e.getMessage());
+                }
 
                 Company company = companyService.getCompany(1);
                 GenaratePdf genaratePdf = new GenaratePdf();
                 genaratePdf.genaratePdfByte(t, company);
 
                 PdfTLSEmail email = new PdfTLSEmail();
-                email.sendPdfTLSEmail(t, company);
-
-                PrintPdf printPdf = new PrintPdf();
-                String currentPath = System.getProperty("user.dir") + "/";
                 try {
-//                    printPdf.runPrintPdf(currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf");
-                } catch (Exception ex) {
-                    ex.printStackTrace();
+                    email.sendPdfTLSEmail(t, company, cemail.getText());
+
+                } catch (Exception e) {
+                    Notification.successfullyMessage(e.getMessage() + ":" + cemail.getText());
+                }
+                try {
+
+                    email.sendPdfTLSEmail(t, company, remail.getText());
+                } catch (Exception e) {
+                    Notification.successfullyMessage(e.getMessage() + ":" + remail.getText());
+                }
+                ButtonType yes = new ButtonType("Yes", ButtonBar.ButtonData.OK_DONE);
+                ButtonType no = new ButtonType("No", ButtonBar.ButtonData.CANCEL_CLOSE);
+                Alert alert = new Alert(Alert.AlertType.INFORMATION,
+                        "Do you want to print?",
+                        yes,
+                        no);
+
+                alert.setTitle("Print");
+                Optional<ButtonType> result = alert.showAndWait();
+
+                if (result.orElse(no) == yes) {
+//                    Notification.successfullyMessage("print");
+
+                    PrintPdf printPdf = new PrintPdf();
+                    String currentPath = System.getProperty("user.dir") + "/";
+                    try {
+                        System.out.println(" tprinterName.getValue():" + tprinterName.getValue());
+                        printPdf.runPrintPdf(currentPath + "I-" + String.format("%06d", t.getId()) + ".pdf", tprinterName.getValue());
+                    } catch (Exception ex) {
+
+                        Notification.successfullyMessage(ex.getMessage());
+                    }
+                } else {
+//                    Notification.successfullyMessage("not print");
                 }
 
 /////////////////////////////////////////////////
-//                if (result) {
-//                    Notification.successfullyMessage("Registration Successful");
-//                    clearAll();
-//                } else {
-//                    Notification.errorMessage("Fail to create.Please check all fields");
-//                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -304,6 +365,36 @@ public class TransactionController implements Initializable {
      *
      */
     private void clearAll() {
+        rbank.setValue(null);
+        tcountry.setValue(null);
+        tsendCurrency.setValue(null);
+        treceiveCurrency.setValue(null);
+        tprinterName.setValue(null);
+        cfulName.clear();
+        cdob.setValue(null);
+        ctelephone.clear();
+        caddress.clear();
+        cidNumber.clear();
+        cidExpiryDate.setValue(null);
+        cissuePlace.clear();
+        cpurpose.clear();
+        coccupation.clear();
+        rfulName.clear();
+        rdob.setValue(null);
+        rtelephone.clear();
+        raddress.clear();
+        ridNumber.clear();
+
+        rreceivedMethod.clear();
+        ttransactionId.clear();
+        tamountSend.clear();
+        tcommission.clear();
+        ttotal.clear();
+        texchangeRate.clear();
+        tamountReceive.clear();
+        tpaymentMethod.clear();
+        cemail.clear();
+        remail.clear();
         rbank.setValue(null);
 
         cfulName.clear();

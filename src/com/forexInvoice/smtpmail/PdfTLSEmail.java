@@ -6,10 +6,12 @@ package com.forexInvoice.smtpmail;
  */
 import com.forexInvoice.model.Company;
 import com.forexInvoice.model.Transaction;
+import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
+import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 
@@ -19,16 +21,17 @@ public class PdfTLSEmail {
      * Outgoing Mail (SMTP) Server requires TLS or SSL: smtp.gmail.com (use
      * authentication) Use Authentication: Yes Port for TLS/STARTTLS: 587
      */
-    public void sendPdfTLSEmail(Transaction t, Company c) {
+    public void sendPdfTLSEmail(Transaction t, Company c, String email) throws MessagingException, UnsupportedEncodingException {
 
         String EMAIL = "Invoiceletzsol@gmail.com";
- 
+
         String EMAIL_PS = "P@ssword123$";
         final String fromEmail = EMAIL; //requires valid gmail id
         final String password = EMAIL_PS; // correct password for gmail id
 
 //        final String toEmail = "ismailhossainraju19@gmail.com"; // can be any email id
-        final String toEmail = "thilagavathi.mani@letzsol.com"; // can be any email id
+//        final String toEmail = "thilagavathi.mani@letzsol.com"; // can be any email id
+        final String toEmail = email; // can be any email id
 
         System.out.println("TLSEmail Start");
         Properties props = new Properties();

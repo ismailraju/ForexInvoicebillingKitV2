@@ -27,6 +27,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import javax.print.PrintException;
+import javax.print.PrintService;
+import javax.print.PrintServiceLookup;
 import org.opencv.core.Core;
 
 public class ForexInvoicebillingKit extends Application {
@@ -89,7 +91,6 @@ public class ForexInvoicebillingKit extends Application {
 //
 //        PdfTLSEmail email = new PdfTLSEmail();
 //        email.sendPdfTLSEmail(t, company);
-
 //
 //        PrintPdf printPdf = new PrintPdf();
 //        String currentPath = System.getProperty("user.dir") + "/";
@@ -98,7 +99,23 @@ public class ForexInvoicebillingKit extends Application {
 //        } catch (PrintException ex) {
 //        } catch (IOException ex) {
 //        }
-
+//        PrintService[] printServices = PrintServiceLookup.lookupPrintServices(null, null);
+//        System.out.println("Number of print services: " + printServices.length);
+//
+//        for (PrintService printer : printServices) {
+//            System.out.println("Printer: " + printer.getName());
+//        }
+        String runnigDir = System.getProperty("java.class.path");
+        System.out.println("runnigDir:" + runnigDir);
+        String current="";
+        try {
+            current = new java.io.File(".").getCanonicalPath();
+        } catch (IOException ex) {
+            Logger.getLogger(ForexInvoicebillingKit.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println("Current dir:" + current);
+        String currentDir = System.getProperty("user.dir");
+        System.out.println("Current dir using System:" + currentDir);
         launch(args);
     }
 

@@ -26,7 +26,7 @@ import javax.print.attribute.standard.Sides;
  */
 public class PrintPdf {
 
-    public void runPrintPdf(String pdfUrl) throws FileNotFoundException, PrintException, IOException {
+    public void runPrintPdf(String pdfUrl,String printerName) throws FileNotFoundException, PrintException, IOException {
         DocFlavor flavor = DocFlavor.SERVICE_FORMATTED.PAGEABLE;
         PrintRequestAttributeSet patts = new HashPrintRequestAttributeSet();
         patts.add(Sides.DUPLEX);
@@ -38,7 +38,7 @@ public class PrintPdf {
 
         PrintService myService = null;
         for (PrintService printService : ps) {
-            if (printService.getName().equals("Brother HL-L8360CDW series")) {
+            if (printService.getName().equals(printerName)) {
                 myService = printService;
                 break;
             }

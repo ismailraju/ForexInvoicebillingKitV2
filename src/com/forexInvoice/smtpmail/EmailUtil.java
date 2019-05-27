@@ -130,54 +130,50 @@ public class EmailUtil {
      * @param subject
      * @param body
      */
-    public static void sendAttachmentEmail(Session session, String toEmail, String subject, String body, String filename) {
-        try {
-            MimeMessage msg = new MimeMessage(session);
-            msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
-            msg.addHeader("format", "flowed");
-            msg.addHeader("Content-Transfer-Encoding", "8bit");
+    public static void sendAttachmentEmail(Session session, String toEmail, String subject, String body, String filename) throws MessagingException, UnsupportedEncodingException {
 
-            msg.setFrom(new InternetAddress("no_reply@example.com", "NoReply"));
+        MimeMessage msg = new MimeMessage(session);
+        msg.addHeader("Content-type", "text/HTML; charset=UTF-8");
+        msg.addHeader("format", "flowed");
+        msg.addHeader("Content-Transfer-Encoding", "8bit");
 
-            msg.setReplyTo(InternetAddress.parse("no_reply@example.com", false));
+        msg.setFrom(new InternetAddress("no_reply@example.com", "NoReply"));
 
-            msg.setSubject(subject, "UTF-8");
+        msg.setReplyTo(InternetAddress.parse("no_reply@example.com", false));
 
-            msg.setSentDate(new Date());
+        msg.setSubject(subject, "UTF-8");
 
-            msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail, false));
+        msg.setSentDate(new Date());
 
-            // Create the message body part
-            BodyPart messageBodyPart = new MimeBodyPart();
+        msg.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail, false));
 
-            // Fill the message
-            messageBodyPart.setText(body);
+        // Create the message body part
+        BodyPart messageBodyPart = new MimeBodyPart();
 
-            // Create a multipart message for attachment
-            Multipart multipart = new MimeMultipart();
+        // Fill the message
+        messageBodyPart.setText(body);
 
-            // Set text message part
-            multipart.addBodyPart(messageBodyPart);
+        // Create a multipart message for attachment
+        Multipart multipart = new MimeMultipart();
 
-            // Second part is attachment
-            messageBodyPart = new MimeBodyPart();
+        // Set text message part
+        multipart.addBodyPart(messageBodyPart);
+
+        // Second part is attachment
+        messageBodyPart = new MimeBodyPart();
 //            String filename = "abc.txt";
-            DataSource source = new FileDataSource(filename);
-            messageBodyPart.setDataHandler(new DataHandler(source));
-            messageBodyPart.setFileName(filename);
-            multipart.addBodyPart(messageBodyPart);
+        DataSource source = new FileDataSource(filename);
+        messageBodyPart.setDataHandler(new DataHandler(source));
+        messageBodyPart.setFileName(filename);
+        multipart.addBodyPart(messageBodyPart);
 
-            // Send the complete message parts
-            msg.setContent(multipart);
+        // Send the complete message parts
+        msg.setContent(multipart);
 
-            // Send message
-            Transport.send(msg);
-            System.out.println("EMail Sent Successfully with attachment!!");
-        } catch (MessagingException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        // Send message
+        Transport.send(msg);
+        System.out.println("EMail Sent Successfully with attachment!!");
+
     }
 
     /**

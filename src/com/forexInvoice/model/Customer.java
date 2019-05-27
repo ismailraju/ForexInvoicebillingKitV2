@@ -65,6 +65,8 @@ public class Customer implements Serializable {
     private String purpose;
     @Column(name = "occupation")
     private String occupation;
+    @Column(name = "email")
+    private String email;
 
     public Customer() {
     }
@@ -153,6 +155,14 @@ public class Customer implements Serializable {
         this.occupation = occupation;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -177,5 +187,5 @@ public class Customer implements Serializable {
     public String toString() {
         return "com.forexInvoice.model.Customer[ id=" + id + " ]";
     }
-    
+
 }
