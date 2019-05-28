@@ -1,5 +1,5 @@
 #
-#Tue May 28 02:41:47 BDT 2019
+#Tue May 28 18:09:43 BDT 2019
 com.forexInvoice.model.Company=javax.persistence.Entity,javax.persistence.Table,javax.persistence.NamedQueries
 com.forexInvoice.model.Transaction=javax.persistence.Entity,javax.persistence.Table,javax.persistence.NamedQueries
 com.forexInvoice.model.Recipient=javax.persistence.Entity,javax.persistence.Table,javax.persistence.NamedQueries
