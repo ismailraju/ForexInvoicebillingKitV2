@@ -23,14 +23,13 @@ public class PdfTLSEmail {
      */
     public void sendPdfTLSEmail(Transaction t, Company c, String email) throws MessagingException, UnsupportedEncodingException {
 
-        String EMAIL = "Invoiceletzsol@gmail.com";
+        String EMAIL = "example@gmail.com";
 
-        String EMAIL_PS = "P@ssword123$";
+        String EMAIL_PS = "Password";
         final String fromEmail = EMAIL; //requires valid gmail id
         final String password = EMAIL_PS; // correct password for gmail id
 
-//        final String toEmail = "ismailhossainraju19@gmail.com"; // can be any email id
-//        final String toEmail = "thilagavathi.mani@letzsol.com"; // can be any email id
+ 
         final String toEmail = email; // can be any email id
 
         System.out.println("TLSEmail Start");
